@@ -1,0 +1,46 @@
+import math
+r = float(input("r = "))
+print(f"objetosc kuli wynosi  {(4/3)*math.pi*r**3}")
+
+n = int(input("n = "))
+for i in range(n):
+    print("kocham programować! :D")
+
+suma = 0
+
+while True:
+    odpowiedz = input("Podaj liczbe lub wpisz stop: ")
+    if odpowiedz.lower() == "stop":
+        break
+
+    liczba = float(odpowiedz)
+    suma += liczba
+
+print(f"Suma wynosi: {suma}")
+
+suma = 0
+ile = 0
+
+while True:
+    odpowiedz = input("Podaj liczbę lub wpisz stop: ")
+
+    if odpowiedz.lower() == "stop":
+        break
+
+    liczba = float(odpowiedz)
+    suma += liczba
+    ile += 1
+
+if ile > 0:
+    srednia = suma / ile
+    print(f"Średnia wynosi: {srednia}")
+else:
+    print("Nie podano żadnych liczb.")
+
+n = int(input("Podaj n: "))
+suma = 0
+
+for i in range(n):
+    suma += 2**i
+
+print(f"Suma wynosi: {suma}")
