@@ -1,0 +1,28 @@
+import funkcje.plaskie as pl
+import funkcje.bryly as br
+import funkcje.warunki as wa
+
+
+def main():
+    print("z - zakoncz program")
+    print("a - plaskie")
+    print("b - bryly")
+    print("c - warunki")
+
+    while True:
+        inp = input().lower().strip()
+
+        if inp == "z":
+            print("Program zakonczyl dzialanie")
+            break
+        elif inp == "a":
+            pl.menu_plaskie()
+        elif inp == "b":
+            br.menu_bryly()
+        elif inp == "c":
+            wa.menu_warunki()
+
+
+# --------------------------------------------------
+
+main()
